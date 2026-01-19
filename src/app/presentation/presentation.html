@@ -1,0 +1,84 @@
+<div class="container my-5 presentation-section">
+  <h1 class="page-title text-primary text-center mb-4">Présentation</h1>
+  <div class="row g-4">
+    <!-- About Me -->
+    <div class="col-lg-5 shadow-sm border rounded-4 p-4 bg-light about-card">
+      <div class="text-center">
+        <h2 class="fw-bold text-primary mb-3">À propos de moi</h2>
+        <img
+          src="ppcv.png"
+          alt="Photo de profil"
+          width="200"
+          height="200"
+          class="rounded-circle shadow-sm mb-3 profile-pic"
+        />
+        <p class="text-muted text-justify">
+          Passionné par le développement et la création numérique, j’aime concevoir des expériences
+          interactives et des projets techniques. Curieux et motivé, j’explore aussi bien les
+          technologies backend que frontend.
+        </p>
+      </div>
+    </div>
+
+    <!-- Featured Project -->
+    <div class="col-lg-7 shadow-sm border rounded-4 p-4 bg-white featured-card">
+      <div class="text-center mb-3">
+        <h2 class="fw-bold text-primary">Projet en cours</h2>
+        <h4 class="text-secondary">{{ featuredProject.name }}</h4>
+      </div>
+
+      <carousel class="mb-4 rounded-3 overflow-hidden shadow-sm project-carousel">
+        <slide *ngFor="let picture of featuredProject.pictures">
+          <img
+            [src]="picture"
+            [alt]="featuredProject.name"
+            class="d-block w-100"
+            style="max-height: 300px; object-fit: cover"
+          />
+        </slide>
+      </carousel>
+
+      <p class="text-muted text-center">{{ featuredProject.summary }}</p>
+
+      <div class="d-flex flex-wrap justify-content-center mt-3">
+        <span
+          *ngFor="let tag of featuredProject.tags"
+          class="badge me-2 mb-2 project-tag"
+          [style.background-color]="tag.color"
+        >
+          {{ tag }}
+        </span>
+      </div>
+    </div>
+
+    <!-- Technologies -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="tech-card shadow-sm border rounded-4 p-4 text-center">
+          <h2 class="fw-bold tech-title mb-4">Technologies maîtrisées</h2>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <div class="tech-badge">HTML / CSS</div>
+            <div class="tech-badge">Java</div>
+            <div class="tech-badge">Angular</div>
+            <div class="tech-badge">MongoDb</div>
+            <div class="tech-badge">Maven</div>         
+            <div class="tech-badge">Spring Boot</div>
+            <div class="tech-badge">React</div>
+            <div class="tech-badge">Vue.js</div>
+            <div class="tech-badge">Hibernate / JPA</div>
+            <div class="tech-badge">TypeScript</div>
+            <div class="tech-badge">MySQL</div>
+            <div class="tech-badge">Bootstrap</div>
+            <div class="tech-badge">Tailwind</div>
+            <div class="tech-badge">Git / GitHub</div>
+            <div class="tech-badge">UX / UI</div>
+            <div class="tech-badge">Unity</div>
+            <div class="tech-badge">C#</div>
+            <div class="tech-badge">3D / Game Dev</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

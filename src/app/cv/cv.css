@@ -1,0 +1,111 @@
+/* Conteneur global du CV */
+.cv-container {
+  background-color: #1e1e28 !important; /* fond sombre */
+  color: #e0e0e0 !important; /* texte clair */
+  border-radius: 12px !important;
+  padding: 3rem 2rem !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Bouton Télécharger PDF */
+.cv-container .btn-primary {
+  background-color: #4a90e2 !important;
+  border-color: #4a90e2 !important;
+  color: #fff !important;
+  transition: all 0.3s ease !important;
+}
+.cv-container .btn-primary:hover {
+  background-color: #357ABD !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Accordéon */
+.cv-container .accordion {
+  background-color: #2b2b3d !important;
+  border-radius: 10px !important;
+  border: none !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
+}
+
+/* Items de l’accordéon */
+.cv-container .accordion-item {
+  background-color: #2b2b3d !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+  margin-bottom: 1rem !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.cv-container .accordion-item:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5) !important;
+}
+
+/* Header de l’accordéon */
+.cv-container .accordion-button {
+  background-color: #3a3a4e !important;
+  color: #4a90e2 !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  border: none !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+.cv-container .accordion-button:not(.collapsed) {
+  background-color: #4a90e2 !important;
+  color: #fff !important;
+}
+
+/* Corps de l’accordéon */
+.cv-container .accordion-body {
+  background-color: #2b2b3d !important;
+  color: #c0c0c0 !important;
+  padding: 1.5rem !important;
+}
+
+/* Titres et sous-titres */
+.cv-container .cv-section-title {
+  color: #4a90e2 !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.3rem !important;
+}
+.cv-container .cv-subtitle {
+  color: #4a90e2 !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Séparateurs */
+.cv-container hr {
+  border-color: #444 !important;
+}
+
+/* Listes */
+.cv-container ul {
+  padding-left: 1.2rem !important;
+}
+.cv-container ul li {
+  margin-bottom: 0.3rem !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .cv-container {
+    padding: 2rem 1rem !important;
+  }
+}
+
+
+.cv-container hr {
+  border: none !important;                     
+  height: 3px !important;                     
+  background: linear-gradient(
+    to right,
+    rgba(13, 110, 253, 0.6),                  
+    rgba(108, 117, 125, 0.5),                 
+    rgba(13, 110, 253, 0.6)               
+  ) !important;
+  margin: 2rem 0 !important;                 
+  border-radius: 2px !important;           
+}
+

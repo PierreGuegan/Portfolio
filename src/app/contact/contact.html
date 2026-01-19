@@ -1,0 +1,77 @@
+
+<div class="contact-section container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 shadow-sm border rounded-4 p-5 bg-white contact-card">
+      <h2 class="fw-bold text-center text-primary mb-4">Me contacter</h2>
+      <p class="text-center text-muted mb-5">
+        Une idée de projet, une collaboration ou simplement envie d’échanger ? Remplis le formulaire
+        ci-dessous et je te répondrai dès que possible.
+      </p>
+
+      <form (ngSubmit)="onSubmit()" #contactForm="ngForm" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              required
+              placeholder="Nom"
+              ngModel
+            />
+          </div>
+
+          <div class="col-md-6">
+            <label for="email" class="form-label">Adresse e-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+              placeholder="mon@email.com"
+              ngModel
+            />
+          </div>
+
+          <div class="col-12">
+            <label for="subject" class="form-label">Sujet</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="form-control"
+              placeholder="Objet"
+              ngModel
+            />
+          </div>
+
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              class="form-control"
+              required
+              placeholder="Message"
+              ngModel
+            ></textarea>
+          </div>
+
+          <div class="col-12 text-center mt-4">
+            <button
+              type="submit"
+              class="btn btn-primary px-5 py-2 shadow-sm"
+              [disabled]="!contactForm.valid"
+            >
+              Envoyer
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

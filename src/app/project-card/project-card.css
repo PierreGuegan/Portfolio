@@ -1,0 +1,79 @@
+/* Carte projet globale */
+.project-card {
+  background-color: #2b2b3d !important; /* fond gris/noir */
+  color: #e0e0e0 !important; /* texte clair */
+  border-radius: 12px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Effet au survol de la carte */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Body de la carte */
+.project-card .card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 1.5rem !important;
+}
+
+/* Titre et résumé */
+.project-card .card-title {
+  color: #4a90e2 !important; /* bleu */
+  margin-bottom: 0.5rem !important;
+}
+
+.project-card .card-text {
+  color: #c0c0c0 !important; /* gris clair */
+}
+
+/* Bouton "Voir plus" */
+.project-card .btn-outline-primary {
+  border-color: #4a90e2 !important;
+  color: #4a90e2 !important;
+  transition: all 0.3s ease !important;
+}
+
+.project-card .btn-outline-primary:hover {
+  background-color: #4a90e2 !important;
+  color: #fff !important;
+  transform: scale(1.05) !important;
+}
+
+/* Footer des tags */
+.project-card .card-footer {
+  background-color: #2b2b3d !important;
+  border-top: 1px solid #444 !important;
+  padding: 0.8rem 1rem !important;
+}
+
+/* Tags */
+.project-card .tag {
+  display: inline-flex !important;
+  align-items: center !important;    
+  justify-content: center !important; 
+  color: #fff !important;
+  font-weight: 500 !important;
+  padding: 0.4em 0.8em !important;
+  border-radius: 20px !important;
+  transition: transform 0.2s ease, box-shadow 0.3s ease !important;
+  font-size: 0.85rem !important;      
+  line-height: 1 !important;        
+}
+
+
+.project-card .tag:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .project-card {
+    margin-bottom: 1.5rem !important;
+  }
+}

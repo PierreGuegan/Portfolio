@@ -1,0 +1,20 @@
+.container{
+    margin-top: 20px !important;
+}
+
+.portfolio-itch p {
+  font-size: 1rem;
+  color: #6c757d; /* gris clair */
+}
+
+.portfolio-itch a {
+  color: #0d6efd; /* bleu Bootstrap */
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio-itch a:hover {
+  color: #0b5ed7; /* bleu plus foncé au hover */
+  text-decoration: underline;
+}

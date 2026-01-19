@@ -1,0 +1,81 @@
+/* Conteneur global de la section contact */
+.contact-section {
+  background-color: #1e1e28 !important; /* fond sombre général */
+  color: #e0e0e0 !important; /* texte clair */
+  padding: 4rem 2rem !important;
+  border-radius: 12px !important;
+}
+
+/* Carte du formulaire */
+.contact-card {
+  background-color: #2b2b3d !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.contact-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Titre */
+.contact-card h2 {
+  color: #4a90e2 !important;
+  font-weight: 700 !important;
+}
+
+/* Texte descriptif */
+.contact-card p {
+  color: #c0c0c0 !important;
+}
+
+/* Champs du formulaire */
+.contact-card .form-control {
+  background-color: #3a3a4e !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #4a90e2 !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+}
+.contact-card .form-control:focus {
+  background-color: #4a4a63 !important;
+  border-color: #357ABD !important;
+  box-shadow: 0 0 8px rgba(0,123,255,0.4) !important;
+  color: #fff !important;
+}
+
+/* Labels */
+.contact-card .form-label {
+  color: #4a90e2 !important;
+  font-weight: 500 !important;
+}
+
+/* Bouton envoyer */
+.contact-card .btn-primary {
+  background-color: #4a90e2 !important;
+  border-color: #4a90e2 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+.contact-card .btn-primary:hover {
+  background-color: #357ABD !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Désactivation du bouton */
+.contact-card .btn-primary:disabled {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  cursor: not-allowed !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 2rem 1rem !important;
+  }
+}
+

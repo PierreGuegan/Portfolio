@@ -1,0 +1,24 @@
+<!-- Écran d'accueil -->
+<div
+  class="welcome-screen d-flex flex-column justify-content-center align-items-center text-center"
+  *ngIf="showWelcome()"
+>
+  <h1 class="display-3 fw-bold text-primary mb-3 welcome-text">Pierre Guegan</h1>
+  <p class="lead text-white mb-4 welcome-text">Bienvenue sur mon portfolio</p>
+
+  <button
+    class="btn btn-outline-light btn-lg d-flex align-items-center welcome-text"
+    (click)="enterPortfolio()"
+  >
+    Accéder à mon portfolio
+    <i class="bi bi-arrow-down ms-2"></i>
+  </button>
+</div>
+
+<div class="shadow-sm" *ngIf="!showWelcome()">
+  <app-header></app-header>
+  <app-nav></app-nav>
+</div>
+<main>
+  <router-outlet></router-outlet>
+</main>

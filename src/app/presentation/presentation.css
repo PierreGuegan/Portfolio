@@ -1,0 +1,161 @@
+
+.presentation-section {
+  background: linear-gradient(135deg, #0b0e14, #141824);
+  padding: 40px;
+  border-radius: 16px;
+  animation: fadeIn 0.8s ease;
+  color: #d6e1f5;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.about-card {
+  background: #161a27 !important;
+  border: 1px solid rgba(0, 162, 255, 0.25) !important;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 162, 255, 0.05);
+}
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.2);
+}
+
+
+.profile-pic {
+  border: 3px solid #0b0e14;
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.3);
+  transition: all 0.4s ease;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 162, 255, 0.5);
+}
+
+.featured-card {
+  background: #161a27 !important;
+  border: 1px solid rgba(0, 162, 255, 0.25) !important;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 162, 255, 0.05);
+}
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.2);
+}
+
+
+.project-carousel img {
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 162, 255, 0.1);
+}
+.project-carousel img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.25);
+}
+
+.project-tag {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  border-radius: 20px;
+  background-color: rgba(0, 162, 255, 0.25);
+  backdrop-filter: blur(4px);
+  text-shadow: 0 0 6px rgba(0, 162, 255, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.project-tag:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(0, 162, 255, 0.4);
+}
+
+
+.presentation-section h2,
+.presentation-section h3,
+.presentation-section h4 {
+  color: #00aaff !important;
+  text-shadow: 0 0 10px rgba(0, 162, 255, 0.3);
+}
+
+
+.presentation-section p {
+  color: #b8c4d9 !important;
+}
+
+
+.btn-primary {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #0096ff !important;
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.6);
+}
+
+
+.border {
+  border-color: rgba(0, 162, 255, 0.2) !important;
+}
+.text-muted {
+  color: #a3acc2 !important;
+}
+.bg-light {
+  background-color: #1b1f2c !important;
+}
+
+
+@media (max-width: 992px) {
+  .presentation-section {
+    padding: 20px;
+  }
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Bloc Technologies */
+.tech-card {
+  background: #0f172a !important; /* bleu nuit */
+  border: 1px solid #1e293b !important;
+  color: #e5e7eb !important;
+}
+
+.tech-title {
+  color: #3b82f6 !important;
+}
+
+/* Badges techno */
+.tech-badge {
+  background: #111827 !important;
+  border: 1px solid #1f2937 !important;
+  color: #93c5fd !important;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tech-badge:hover {
+  background: #1e3a8a !important;
+  color: #ffffff !important;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+}
+

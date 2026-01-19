@@ -1,0 +1,15 @@
+<div class="container">
+<h1 class="page-title text-primary text-center mb-4">Mes projets</h1>
+
+  <div class="row">
+    <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4" style="max-width: 380px; min-width: 380px">
+      <app-project-card [project]="project"></app-project-card>
+    </div>
+  </div>
+
+  <!-- Portfolio Itch.io -->
+<div class="portfolio-itch text-center mt-4">
+  <p>Je développe également des jeux vidéo sur <a href="https://pierre-guegan.itch.io/" target="_blank">Itch.io</a>.</p>
+</div>
+
+</div>

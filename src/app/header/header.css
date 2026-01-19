@@ -1,0 +1,75 @@
+.jumbotron {
+  padding: 4rem 1rem !important; /* plus de marge pour éviter la navbar */
+  background: linear-gradient(145deg, #1b1e24, #242933) !important;
+  border-bottom: 2px solid rgba(0, 123, 255, 0.3) !important;
+  border-radius: 0 0 12px 12px !important;
+  color: #e0e6ed !important;
+  text-align: center !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  margin-top: 70px !important; /* évite que la navbar le recouvre */
+  animation: fadeInHeader 0.8s ease-out !important;
+}
+
+/* Animation d’apparition fluide */
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Halo bleu doux dans le fond */
+.jumbotron::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: radial-gradient(circle at 50% 30%, rgba(0, 123, 255, 0.15), transparent 70%) !important;
+  z-index: 0 !important;
+}
+
+/* Nom principal */
+.jumbotron h1 {
+  color: #00aaff !important;
+  text-shadow: 0 0 8px rgba(0, 123, 255, 0.4) !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Sous-titre */
+.jumbotron h3 {
+  color: #b0b8c5 !important;
+  font-weight: 400 !important;
+  position: relative !important;
+  z-index: 1 !important;
+  margin-top: 0.5rem !important;
+}
+
+/* Effet au survol supprimé (plus de mouvement) */
+.jumbotron:hover {
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.15) !important;
+  transform: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 3rem 1rem !important;
+  }
+  .jumbotron h1 {
+    font-size: 2rem !important;
+  }
+  .jumbotron h3 {
+    font-size: 1.1rem !important;
+  }
+}

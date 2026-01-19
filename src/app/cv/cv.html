@@ -1,0 +1,172 @@
+<h1 class="page-title text-primary text-center mb-4">Mon CV</h1>
+
+<div class="cv-container container py-5">
+  <div class="text-center mb-5">
+    <button (click)="DownloadFile()" class="btn btn-primary shadow-lg px-4 py-2">
+      <i class="bi bi-file-earmark-pdf"></i> Télécharger en PDF
+    </button>
+  </div>
+
+  <div class="accordion shadow-lg rounded" id="accordionCV">
+    <!-- Expérience professionnelle -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button fw-bold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+           Expérience professionnelle
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingOne"
+        data-bs-parent="#accordionCV"
+      >
+        <div class="accordion-body">
+          <h3 class="cv-section-title">Alternant - Développeur Java</h3>
+          <h5 class="text-primary">Jehann Nantes — Depuis Juillet 2025</h5>
+          <p>
+            Développement d’une application de crawling.<br />
+            <strong>Environnement technique :</strong> Java, Angular, SQL, Hibernate, Spring Boot,
+            Spring Data JPA.
+          </p>
+          <ul>
+            <li>Maintenance et évolution de l’application</li>
+            <li>Debug et optimisation du code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button
+          class="accordion-button collapsed fw-bold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+        >
+           Éducation
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#accordionCV"
+      >
+        <div class="accordion-body">
+          <div class="cv-edu-block">
+            <h3 class="cv-section-title">
+              Titre professionnel : Concepteur Développeur d'Applications
+            </h3>
+            <h5 class="text-primary">Par Dawan Nantes — Depuis Juillet 2025</h5>
+            <ul>
+              <li>Java, Maven, JPA, MongoDB, Angular, SQL, Merise</li>
+              <li>Git, UML, UX design, méthodes agiles (Scrum)</li>
+            </ul>
+          </div>
+
+          <hr />
+
+          <div class="cv-edu-block">
+            <h3 class="cv-section-title">POE Intégrateur Front-end</h3>
+            <h5 class="text-primary">Dawan Nantes — Mars 2025 - Juillet 2025</h5>
+            <ul>
+              <li>Développement front avec HTML5, CSS3, JavaScript</li>
+              <li>React, Vue.js, Bootstrap, Tailwind</li>
+            </ul>
+          </div>
+
+          <hr />
+
+          <div class="cv-edu-block">
+            <h3 class="cv-section-title">Bachelor Game Design</h3>
+            <h5 class="text-primary">Eartsup Nantes — 2021 - 2024</h5>
+            <ul>
+              <li>Développement sur Unity (C#) et Unreal Engine</li>
+              <li>Création d’un serious game (projet 3 mois)</li>
+              <li>Travail en équipe, méthode agile</li>
+            </ul>
+          </div>
+
+          <hr />
+
+          <div class="cv-edu-block">
+            <h3 class="cv-section-title">Prépa Scientifique et L1 Biologie</h3>
+            <h5 class="text-primary">Faculté des sciences de Nantes — 2019 - 2021</h5>
+          </div>
+
+          <hr />
+
+          <div class="cv-edu-block">
+            <h3 class="cv-section-title">Bac S Mention Bien — 2019</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compétences -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button
+          class="accordion-button collapsed fw-bold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+          Compétences
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#accordionCV"
+      >
+        <div class="accordion-body">
+          <div class="row text-start">
+            <div class="col-md-4">
+              <h4 class="cv-subtitle">Langages</h4>
+              <ul>
+                <li>HTML / CSS</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <h4 class="cv-subtitle">Frameworks</h4>
+              <ul>
+                <li>Spring, JPA / Hibernate</li>
+                <li>Angular, React, Vue.js</li>
+                <li>Tailwind, Bootstrap</li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <h4 class="cv-subtitle">Outils & Autres</h4>
+              <ul>
+                <li>Git, Figma, Unity</li>
+                <li>Illustrator, Photoshop, Blender</li>
+                <li>Méthode agile, Anglais B2</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

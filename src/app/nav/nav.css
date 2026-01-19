@@ -1,0 +1,106 @@
+/* ===== NAVBAR sombre ===== */
+.navbar,
+.custom-navbar,
+.navbar-expand-md {
+  background-color: #0d1117 !important;
+  background: linear-gradient(135deg, #0d1117, #1b1f29) !important;
+  border-bottom: 1px solid rgba(0, 162, 255, 0.25) !important;
+  box-shadow: 0 0 20px rgba(0, 162, 255, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: #cfd7e3 !important;
+  z-index: 1000 !important;
+  padding: 0.8rem 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Empêche Bootstrap de remettre du blanc */
+.navbar-light,
+.bg-light {
+  background-color: #0d1117 !important;
+  background-image: none !important;
+  color: #cfd7e3 !important;
+}
+
+/* Liens de navigation */
+.nav-link {
+  color: #cfd7e3 !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  position: relative !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase !important;
+  font-size: 0.95rem !important;
+  padding: 0.6rem 1rem !important;
+}
+
+/* Effet de surbrillance bleu sous le lien */
+.nav-link::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 2px !important;
+  left: 50% !important;
+  width: 0 !important;
+  height: 2px !important;
+  background-color: #00aaff !important;
+  transition: all 0.3s ease !important;
+  transform: translateX(-50%) !important;
+  border-radius: 2px !important;
+}
+
+/* Survol */
+.nav-link:hover {
+  color: #00aaff !important;
+  text-shadow: 0 0 10px rgba(0, 162, 255, 0.6) !important;
+}
+.nav-link:hover::after {
+  width: 60% !important;
+}
+
+/* Lien actif */
+.nav-link.active,
+.nav-link.router-link-active {
+  color: #00aaff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 12px rgba(0, 162, 255, 0.8) !important;
+}
+.nav-link.active::after,
+.nav-link.router-link-active::after {
+  width: 60% !important;
+}
+
+/* Suppression du fond blanc sur container Bootstrap */
+.navbar .container {
+  background: transparent !important;
+}
+
+/* Animation d'apparition */
+@keyframes navbarFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar {
+  animation: navbarFadeIn 0.8s ease forwards !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column !important;
+    background-color: #0d1117 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 10px rgba(0, 162, 255, 0.15) !important;
+  }
+
+  .nav-link {
+    text-align: center !important;
+    padding: 0.9rem !important;
+    font-size: 1rem !important;
+  }
+}
